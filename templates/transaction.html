@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>AgroCulture: Transaction</title>
+        <meta charset="UTF-8">
+        <style>
+            body {
+            
+                /* background-image:url('templates/newbg.jpg') center/cover no-repeat; */
+                background-color: #f9cfa2; 
+                /* background-color: (#808080); */
+                font-family: 'Arial', sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+            }
+        
+            #transaction-container {
+               
+                background: linear-gradient(to bottom right, #3498db, #2c3e50); /* Set your desired gradient colors */
+                border: 1px solid #9bed80;/*this was #fff*/
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);/*this was 0, 0, 0, 0.2*/
+                color: #da8345e6;/*this was #fff*/
+                padding: 20px;
+                width: 400px;
+            }
+    
+            h2 {    
+                
+                color: #d64a63;/*this was #d64a63*/
+                text-align: center;
+                margin-bottom: 20px;
+            }
+    
+            label {
+                
+                display: inline-block;
+                width: 45%; /* Adjust the width based on your preference */
+                margin: 10px 2.5% 5px;
+            }
+    
+            input {
+                
+                width: 47.5%; /* Adjust the width based on your preference */
+                padding: 10px;
+                box-sizing: border-box;
+                border: 1px solid #f38686; /*this was #fff*/
+                border-radius: 4px;
+                background-color: rgba(255, 255, 255, 0.3); /*this was 255, 255, 255, 0.3*/
+                color: #bc6868;/*this was #333*/
+                display: inline-block;
+            }
+    
+            input[type="submit"] {
+                
+                width: 100%; /* Make the submit button full width */
+                background-color: #2ecc71; 
+                color: #fff;/*this was #fff*/
+                cursor: pointer;
+            }
+    
+            input[type="submit"]:hover {
+                background-image:url('templates/newbg.jpg') ;
+                background-color: #27ae60;
+            }
+        </style>
+    </head>
+<body>
+    <center>
+        <h2>Transaction Details</h2>
+        <form method="post" action="{{ url_for('transaction', pid=pid) }}" style="border: 1px solid black; padding: 15px;">
+        
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required/>
+            </div>
+            <div>
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city" required/>
+            </div>
+            <div>
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" name="mobile" id="mobile" required/>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required/>
+            </div>
+            <div>
+                <label for="pincode">Pincode:</label>
+                <input type="text" name="pincode" id="pincode" required/>
+            </div>
+            <div>
+                <label for="addr">Address:</label>
+                <input type="text" name="addr" id="addr" style="width:80%" required/>
+            </div>
+            <br />
+            <p>
+                <input type="submit" value="Confirm Order" />
+            </p>
+        </form>
+    </center>
+</body>
+</html>
