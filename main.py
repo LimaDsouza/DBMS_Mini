@@ -11,7 +11,7 @@ from datetime import datetime
 # MY db connection
 local_server= True
 app = Flask(__name__)
-app.secret_key='harshithbhaskar'
+# app.secret_key='harshithbhaskar'
 
 
 # this is for getting unique user access
