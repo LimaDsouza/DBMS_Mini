@@ -1,4 +1,4 @@
-#Farmer's Market Management System
+# Farmer's Market Management System
 Project Overview
 This project is designed to help farmers track their daily purchases of vegetables and other land items. The system provides an easy-to-use interface for farmers to manage their inventory and sales, ensuring they have accurate and up-to-date information on their produce.
 
